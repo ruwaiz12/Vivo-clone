@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+.img {
+    position: relative; /* Set the container as relative */
+  }
+  
+  .overlay-img {
+    position: absolute; /* Position the new image absolutely */
+    top: 50%; /* Adjust the positioning (centered in this example) */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image exactly */
+    width: 150px; /* Set the size of the overlay image (optional) */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Ensure the overlay image is above the main image */
+  }
+  .over-text{
+    padding-right: 30%;
+  }
+  .border{
+    border-radius: 30px;
+    --f: 1.15; /* the scale factor */
+    
+    clip-path: inset(0);
+    transition: .9s;
+
+  }
+  
+  
+  .border:hover {
+    border-radius: 30px;
+    clip-path: inset(calc((1 - 1/var(--f)) * 30%));
+    scale: var(--f)
+    
+  }
+  .btw-pd{
+    padding-top: 30px;
+    
+    
+  }
+  .text-overlay img {
+    margin-bottom: 10px; /* Add spacing between the image and text */
+    
+   
+  }
+  
+  .secondbackGimg {
+    position: relative;
+  }
+  
+  .text-overlay {
+    z-index: 10; /* Ensures the transparent image and text are above the main image */
+  }
+  .buy-now-animation {
+    overflow: hidden; /* Ensure smooth animation within button bounds */
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .buy-now-animation:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background-color: #007bff; /* Customize hover color */
+  }
+  
+  .buy-now-animation i {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .buy-now-animation:hover i {
+    transform: translateX(10px); /* Move the icon slightly to the right */
+  }
+section {
+  margin-top: 10px; /* Adjust this value as needed */
+}
+.footer-text{
+    text-decoration: none;
+    color: gray;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+} 
+.navbar{
+  position: fixed; 
+  z-index: 100;
+} 
+
+
+.img-footer{
+  width: 38px;
+  
+}
+.socialmedia{
+  margin-right: 1%;
+}
